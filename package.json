@@ -1,0 +1,43 @@
+{
+  "name": "v-doc.",
+  "version": "1.0.1",
+  "description": "V Doc. - SUPOTA",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w --include-path scss scss/ -o css/ --output-style compressed",
+    "prefix": "postcss --use autoprefixer --no-map css/ -d css/",
+    "test": "npm-run-all -p dev scss prefix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supota/v-doc.git"
+  },
+  "author": "SUPOTA",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/supota/v-doc/issues"
+  },
+  "homepage": "https://github.com/supota/v-doc#readme",
+  "devDependencies": {
+    "autoprefixer": "9.5.1",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-uncss": "^0.8.6",
+    "node-sass": "^4.12.0",
+    "node-sass-import": "2.0.1",
+    "npm-run-all": "4.1.5",
+    "postcss": "7.0.16",
+    "postcss-cli": "6.1.2",
+    "postcss-import": "12.0.1",
+    "postcss-loader": "3.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not ie < 11",
+    "Android >= 6",
+    "iOS >= 10"
+  ],
+  "dependencies": {
+    "firebase": "^6.2.0",
+    "grunt": "^1.0.4"
+  }
+}

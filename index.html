@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="https://www.supota.com/img/icon.png">
+  <title>V Doc. - Admin | SUPOTA</title>
+  <meta name="description"
+    content="SUPOTAとは、自分の応援したいスポーツ選手を直接的にサポートできるサービスです。「トークンエコノミー」を用いて、スポーツの課題を解決するサービスを提供します。私たちは、「全てのアスリートがもっと自由に活動できる環境づくり」を目指します。" />
+  <meta name="keywords" content="ベンチャースポーツ,e-Sports,トークンエコノミー,スポーツ,仮想通貨,SUPOTA,河合佑真,VSports" />
+  <meta name="author" content="@supota_" />
+  <meta property="og:title" content="V Doc." />
+  <meta property="og:image" content="https://www.supota.com/img/icon.png" />
+  <meta property="og:url" content="https://v-doc.supota.com/" />
+  <meta property="og:site_name" content="V Doc." />
+  <meta property="og:description"
+    content="SUPOTAとは、自分の応援したいスポーツ選手を直接的にサポートできるサービスです。「トークンエコノミー」を用いて、スポーツの課題を解決するサービスを提供します。私たちは、「全てのアスリートがもっと自由に活動できる環境づくり」を目指します。" />
+  <meta name="twitter:title" content="SUPOTA" />
+  <meta name="twitter:image" content="https://www.supota.com/img/icon.png" />
+  <meta name="twitter:url" content="https://v-doc.supota.com/" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar-fixed">
+    <div class="nav-wrapper">
+      <div class="row">
+        <div class="col s12">
+          <a href="" class="brand-logo">　V Doc. - Admin
+            <span style="font-weight: 900; font-size: 0.4em; opacity:0.8;">
+              by SUPOTA
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div id="text-box" class="col s12">
+      <input type="text" id="tx1" placeholder="年齢" required>
+      <br />
+      <input type="text" id="tx2" placeholder="自己紹介" required>
+      <br />
+      <input type="text" id="tx3" placeholder="出身" required>
+      <br />
+      <input type="text" id="tx4" placeholder="画像URL" required>
+      <br />
+      <input type="text" id="tx5" placeholder="選手名かな" required>
+      <br />
+      <input type="text" id="tx6" placeholder="選手名" required>
+      <br />
+      <input type="text" id="tx7" placeholder="性別" required>
+      <br />
+      <input type="text" id="tx8" placeholder="スポーツ名" required>
+      <br />
+      <input type="text" id="tx9" placeholder="チーム名" required>
+      <br />
+      <input type="text" id="tx10" placeholder="Twitter" required>
+      <br />
+      <input type="text" id="tx11" placeholder="成績" required>
+      <br />
+      <input type="text" id="tx12" placeholder="活動歴" required>
+      <br />
+      <input type="text" id="tx13" placeholder="Facebook" required>
+      <br />
+      <button class="btn waves-effect waves-light" onclick="Create();">保存</button>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+        © 2019 Copyright SUPOTA Inc.
+        <a class="grey-text text-lighten-4 right" href="https://www.supota.com">運営元サイト</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/firebase-func.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>

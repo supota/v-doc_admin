@@ -26,6 +26,7 @@
    performances = document.getElementById("tx11").value;
    historyies = document.getElementById("tx12").value;
    facebooks = document.getElementById("tx13").value;
+   ids = document.getElementById("tx14").value;
    //Firebaseのデータベースにデータを保存する
    firebase.database();
    var playerRef = firebase.database().ref('player');
@@ -43,6 +44,7 @@
      performance: performances,
      history: historyies,
     facebook: facebooks,
+    id: ids
    })
    alert("保存しました");
  }
